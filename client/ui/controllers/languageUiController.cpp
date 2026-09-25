@@ -36,6 +36,11 @@ int LanguageUiController::getCurrentLanguageIndex() const
     }
 }
 
+bool LanguageUiController::isPersianUi() const
+{
+    return m_settingsController->getAppLanguage().language() == QLocale::Persian;
+}
+
 int LanguageUiController::getLineHeightAppend() const
 {
     auto locale = m_settingsController->getAppLanguage();

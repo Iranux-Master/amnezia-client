@@ -6,6 +6,14 @@ Each component is distributed under its own license as linked below.
 
 ---
 
+## Shabnam
+
+- Source: https://github.com/rastikerdar/shabnam-font (version 5.0.1)
+- License: SIL Open Font License 1.1; see `client/fonts/Shabnam-LICENSE.txt`
+- The unmodified Regular, Medium and Bold TrueType files are embedded for the Persian interface.
+
+---
+
 ## QtKeychain
 
 - Source: https://github.com/frankosterfeld/qtkeychain

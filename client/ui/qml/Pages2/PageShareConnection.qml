@@ -51,6 +51,7 @@ PageType {
     }
 
     Text {
+        horizontalAlignment: Text.AlignLeft
         id: shareHeader
         anchors.top: backButton.bottom
         anchors.left: parent.left
@@ -63,7 +64,7 @@ PageType {
         color: AmneziaStyle.color.paleGray
         font.pixelSize: 32
         font.weight: 700
-        font.family: "PT Root UI VF"
+        font.family: AmneziaStyle.uiFontFamily
         wrapMode: Text.WordWrap
     }
 
@@ -231,6 +232,8 @@ PageType {
                             }
 
                             TextField {
+                                LayoutMirroring.enabled: false
+                                horizontalAlignment: Text.AlignLeft
                                 id: nativeConfigString
                                 visible: false
                                 text: ExportController.nativeConfigString
@@ -238,6 +241,8 @@ PageType {
                             }
 
                             TextArea {
+                                LayoutMirroring.enabled: false
+                                horizontalAlignment: Text.AlignLeft
                                 id: configText
                                 Layout.fillWidth: true
                                 Layout.topMargin: 16

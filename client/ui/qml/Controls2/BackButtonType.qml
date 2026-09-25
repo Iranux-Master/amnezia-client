@@ -23,7 +23,8 @@ FocusScope {
 
         ImageButtonType {
             id: backButton
-            image: backButtonImage
+            image: AmneziaStyle.persianUi && backButtonImage.endsWith("/arrow-left.svg")
+                   ? "qrc:/images/controls/arrow-right.svg" : backButtonImage
             imageColor: AmneziaStyle.color.paleGray
 
             implicitWidth: 40

@@ -131,6 +131,8 @@ PageType {
                             width: drawerListView.width
 
                             TextArea {
+                                LayoutMirroring.enabled: false
+                                horizontalAlignment: Text.AlignLeft
                                 id: configText
 
                                 Layout.fillWidth: true

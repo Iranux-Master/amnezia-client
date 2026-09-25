@@ -16,6 +16,11 @@ Window  {
     id: root
     objectName: "mainWindow"
 
+    // Mirror the chrome and content when Persian is selected, including live
+    // language changes. Data-entry controls explicitly opt out below.
+    LayoutMirroring.enabled: AmneziaStyle.persianUi
+    LayoutMirroring.childrenInherit: true
+
     Connections {
         target: Qt.application
         function onStateChanged() {

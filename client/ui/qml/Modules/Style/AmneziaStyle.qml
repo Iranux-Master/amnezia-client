@@ -3,6 +3,9 @@ pragma Singleton
 import QtQuick
 
 QtObject {
+    readonly property bool persianUi: LanguageUiController.persianUi
+    readonly property string uiFontFamily: persianUi ? "Shabnam" : "PT Root UI VF"
+    readonly property real uiLetterSpacing: persianUi ? 0 : -0.4
     property QtObject color: QtObject {
         readonly property color transparent: 'transparent'
         readonly property color paleGray: '#D7D8DB'

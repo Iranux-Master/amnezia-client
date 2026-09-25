@@ -73,6 +73,7 @@ PageType {
             }
 
             Label {
+                horizontalAlignment: Text.AlignLeft
                 Layout.fillWidth: true
                 Layout.leftMargin: 16
                 Layout.rightMargin: 16
@@ -80,6 +81,7 @@ PageType {
                 text: qsTr(root.processedServer.name + "\nsubscription key")
                 font.pixelSize: 32
                 font.bold: true
+                font.family: AmneziaStyle.uiFontFamily
                 color: AmneziaStyle.color.paleGray
                 wrapMode: Text.Wrap
             }
@@ -221,6 +223,8 @@ PageType {
                 }
 
                 TextArea {
+                    LayoutMirroring.enabled: false
+                    horizontalAlignment: Text.AlignLeft
                     Layout.fillWidth: true
                     Layout.topMargin: 16
                     readOnly: true

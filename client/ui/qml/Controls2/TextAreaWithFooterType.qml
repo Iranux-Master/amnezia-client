@@ -49,6 +49,8 @@ Rectangle {
             }
 
             TextArea {
+                LayoutMirroring.enabled: false
+                horizontalAlignment: Text.AlignLeft
                 id: textArea
 
                 Layout.fillWidth: true

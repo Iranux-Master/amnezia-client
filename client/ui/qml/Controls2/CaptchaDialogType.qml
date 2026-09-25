@@ -130,7 +130,7 @@ Popup {
                 color: AmneziaStyle.color.paleGray
                 font.pixelSize: 18
                 font.weight: Font.Bold
-                font.family: "PT Root UI VF"
+                font.family: AmneziaStyle.uiFontFamily
                 lineHeight: 24 + LanguageUiController.getLineHeightAppend()
                 lineHeightMode: Text.FixedHeight
                 horizontalAlignment: Text.AlignLeft
