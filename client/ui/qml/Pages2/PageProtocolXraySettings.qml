@@ -71,6 +71,8 @@ PageType {
             spacing: 0
 
             Text {
+
+                horizontalAlignment: Text.AlignLeft
                 Layout.fillWidth: true
                 Layout.leftMargin: 16
                 Layout.rightMargin: 16
@@ -79,6 +81,7 @@ PageType {
                 wrapMode: Text.WordWrap
                 color: AmneziaStyle.color.paleGray
                 font.pixelSize: 14
+                font.family: AmneziaStyle.uiFontFamily
                 text: qsTr("You have read-only access to this server. XRay settings cannot be edited.")
             }
 

@@ -111,12 +111,14 @@ RadioButton {
         spacing: 16
 
         Text {
+
+            horizontalAlignment: Text.AlignLeft
             text: root.headerText
             wrapMode: Text.WordWrap
             color: AmneziaStyle.color.paleGray
             font.pixelSize: 25
             font.weight: 700
-            font.family: "PT Root UI VF"
+            font.family: AmneziaStyle.uiFontFamily
 
             height: 30
             Layout.fillWidth: true
@@ -126,12 +128,14 @@ RadioButton {
         }
 
         Text {
+
+            horizontalAlignment: Text.AlignLeft
             text: root.bodyText
             wrapMode: Text.WordWrap
             color: AmneziaStyle.color.paleGray
             font.pixelSize: 16
             font.weight: 400
-            font.family: "PT Root UI VF"
+            font.family: AmneziaStyle.uiFontFamily
 
             height: 24
             Layout.fillWidth: true
@@ -141,13 +145,15 @@ RadioButton {
         }
 
         Text {
+
+            horizontalAlignment: Text.AlignLeft
             text: root.footerText
             wrapMode: Text.WordWrap
             visible: root.footerText !== ""
             color: AmneziaStyle.color.mutedGray
             font.pixelSize: 13
             font.weight: 400
-            font.family: "PT Root UI VF"
+            font.family: AmneziaStyle.uiFontFamily
 
             height: 16
             Layout.fillWidth: true

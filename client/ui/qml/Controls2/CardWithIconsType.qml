@@ -175,6 +175,7 @@ Button {
 
                     hoverEnabled: false
                     image: rightImageSource
+                    rotation: AmneziaStyle.persianUi && rightImageSource.endsWith("/chevron-right.svg") ? 180 : 0
                     imageColor: rightImageColor
                     visible: rightImageSource ? true : false
 

@@ -259,6 +259,9 @@ void AmneziaApplication::loadFonts()
     QQuickStyle::setStyle("Basic");
 
     QFontDatabase::addApplicationFont(QStringLiteral(APP_UI_FONT_RESOURCE));
+    QFontDatabase::addApplicationFont(QStringLiteral(":/fonts/Shabnam.ttf"));
+    QFontDatabase::addApplicationFont(QStringLiteral(":/fonts/Shabnam-Medium.ttf"));
+    QFontDatabase::addApplicationFont(QStringLiteral(":/fonts/Shabnam-Bold.ttf"));
 }
 
 bool AmneziaApplication::parseCommands()

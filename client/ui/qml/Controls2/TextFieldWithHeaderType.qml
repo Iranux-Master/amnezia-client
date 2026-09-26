@@ -97,6 +97,8 @@ Item {
                     }
 
                     TextField {
+                        LayoutMirroring.enabled: false
+                        horizontalAlignment: Text.AlignLeft
                         id: textField
 
                         property bool isFocusable: true
@@ -112,7 +114,7 @@ Item {
                         enabled: root.textFieldEditable
                         color: root.enabled ? root.textFieldTextColor : root.textFieldTextDisabledColor
 
-                        inputMethodHints: Qt.ImhNoAutoUppercase | Qt.ImhSensitiveData | Qt.ImhNoPredictiveText
+                        inputMethodHints: Qt.ImhNoAutoUppercase | Qt.ImhSensitiveData | Qt.ImhNoPredictiveText | Qt.ImhPreferLatin
 
                         placeholderTextColor: AmneziaStyle.color.charcoalGray
 
@@ -268,7 +270,7 @@ Item {
                 color: AmneziaStyle.color.paleGray
                 wrapMode: Text.WordWrap
                 font.pixelSize: 14
-                font.family: "PT Root UI VF"
+                font.family: AmneziaStyle.uiFontFamily
             }
             background: Rectangle {
                 color: AmneziaStyle.color.slateGray

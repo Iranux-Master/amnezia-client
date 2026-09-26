@@ -2,11 +2,10 @@
 
 LanguageModel::LanguageModel(QObject *parent) : QAbstractListModel(parent)
 {
-    QMetaEnum metaEnum = QMetaEnum::fromType<LanguageSettings::AvailableLanguageEnum>();
-    for (int i = 0; i < metaEnum.keyCount(); i++) {
-        m_availableLanguages.push_back(LanguageModelData { getLocalLanguageName(static_cast<LanguageSettings::AvailableLanguageEnum>(i)),
-                                                           static_cast<LanguageSettings::AvailableLanguageEnum>(i) });
-    }
+    constexpr auto english = LanguageSettings::AvailableLanguageEnum::English;
+    constexpr auto persian = LanguageSettings::AvailableLanguageEnum::Persian;
+    m_availableLanguages.push_back(LanguageModelData { getLocalLanguageName(english), english });
+    m_availableLanguages.push_back(LanguageModelData { getLocalLanguageName(persian), persian });
 }
 
 int LanguageModel::rowCount(const QModelIndex &parent) const

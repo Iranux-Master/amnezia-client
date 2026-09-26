@@ -14,6 +14,7 @@ class LanguageUiController : public QObject
     Q_PROPERTY(QString currentLanguageName READ getCurrentLanguageName NOTIFY translationsUpdated)
     Q_PROPERTY(int currentLanguageIndex READ getCurrentLanguageIndex NOTIFY translationsUpdated)
     Q_PROPERTY(int lineHeightAppend READ getLineHeightAppend NOTIFY translationsUpdated)
+    Q_PROPERTY(bool persianUi READ isPersianUi NOTIFY translationsUpdated)
 
 public:
     explicit LanguageUiController(SettingsController* settingsController,
@@ -25,6 +26,7 @@ public slots:
     void onAppLanguageChanged(const QLocale &locale);
     int getCurrentLanguageIndex() const;
     int getLineHeightAppend() const;
+    bool isPersianUi() const;
     QString getCurrentLanguageName() const;
     QString getCurrentSiteUrl(const QString &path = "") const;
     QString getCurrentDocsUrl(const QString &path = "") const;
@@ -44,4 +46,3 @@ private:
 };
 
 #endif // LANGUAGEUICONTROLLER_H
-

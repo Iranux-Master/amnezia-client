@@ -36,6 +36,8 @@ Rectangle {
             anchors.bottom: parent.bottom
             contentHeight: textArea.implicitHeight
             TextArea {
+                LayoutMirroring.enabled: false
+                horizontalAlignment: Text.AlignLeft
                 id: textArea
 
                 width: parent.width

@@ -154,10 +154,10 @@ DrawerType2 {
                         }
 
                         ButtonGroup.group: buttonGroup
-                        checked: listView.selectedIndex === index
+                        checked: listView.selectedIndex === languageIndex
 
                         onClicked: {
-                            listView.selectedIndex = index
+                            listView.selectedIndex = languageIndex
                             LanguageUiController.changeLanguage(languageIndex)
                             root.closeTriggered()
                         }
