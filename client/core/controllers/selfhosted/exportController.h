@@ -31,6 +31,7 @@ public:
         QString config;
         QString nativeConfigString;
         QList<QString> qrCodes;
+        QString clientId;
     };
 
     explicit ExportController(SecureServersRepository* serversRepository,
@@ -61,6 +62,7 @@ private:
     {
         ErrorCode errorCode = ErrorCode::NoError;
         QJsonObject jsonNativeConfig;
+        QString clientId;
     };
 
     NativeConfigResult generateNativeConfig(const QString &serverId, DockerContainer container,

@@ -94,11 +94,19 @@ PageType {
             PageController.showBusyIndicator(false)
             PageController.showErrorMessage(error)
         }
+
+        function onAccountBatchFinished(succeeded, failed) {
+            PageController.showBusyIndicator(false)
+            PageController.showNotificationMessage(qsTr("Account creation finished: %1 succeeded, %2 failed").arg(succeeded).arg(failed))
+        }
     }
 
     property bool isSearchBarVisible: false
     property bool showContent: false
     property bool shareButtonEnabled: true
+    property var selectedBatchProtocols: []
+    property var selectedAccountIds: []
+    property string sharePreview: ""
     property list<QtObject> connectionTypesModel: [
         amneziaConnectionFormat
     ]
@@ -229,7 +237,7 @@ PageType {
                         id: connectionRadioButton
                         checked: accessTypeSelector.currentIndex === 0
 
-                        implicitWidth: (root.width - 32) / 2
+                        implicitWidth: (root.width - 32) / 3
                         text: qsTr("Connection")
 
                         onClicked: {
@@ -244,7 +252,7 @@ PageType {
                         id: usersRadioButton
                         checked: accessTypeSelector.currentIndex === 1
 
-                        implicitWidth: (root.width - 32) / 2
+                        implicitWidth: (root.width - 32) / 3
                         text: qsTr("Users")
 
                         onClicked: {
@@ -257,6 +265,12 @@ PageType {
 
                         Keys.onEnterPressed: this.clicked()
                         Keys.onReturnPressed: this.clicked()
+                    }
+                    HorizontalRadioButton {
+                        checked: accessTypeSelector.currentIndex === 2
+                        implicitWidth: (root.width - 32) / 3
+                        text: qsTr("Accounts")
+                        onClicked: accessTypeSelector.currentIndex = 2
                     }
                 }
             }
@@ -525,6 +539,152 @@ PageType {
                         exportTypeSelector.currentIndex = exportTypeSelectorListView.selectedIndex
                         exportTypeSelector.closeTriggered()
                     }
+                }
+            }
+
+            ColumnLayout {
+                id: accountsPane
+                visible: accessTypeSelector.currentIndex === 2
+                Layout.fillWidth: true
+                Layout.topMargin: 24
+                spacing: 12
+
+                Header2Type {
+                    Layout.fillWidth: true
+                    headerText: qsTr("Create account groups")
+                    descriptionText: qsTr("Each account gets separate credentials for every selected connection method.")
+                }
+                TextFieldWithHeaderType {
+                    id: batchNameField
+                    Layout.fillWidth: true
+                    headerText: qsTr("Account name")
+                    textField.text: qsTr("Client")
+                    textField.maximumLength: 20
+                    textField.inputMethodHints: Qt.ImhLatinOnly
+                }
+                TextFieldWithHeaderType {
+                    id: batchCountField
+                    Layout.fillWidth: true
+                    headerText: qsTr("Number of accounts (1–100)")
+                    textField.text: "1"
+                    textField.inputMethodHints: Qt.ImhDigitsOnly
+                }
+                ParagraphTextType {
+                    Layout.fillWidth: true
+                    text: qsTr("Select installed VPN methods")
+                    color: AmneziaStyle.color.paleGray
+                }
+                Repeater {
+                    model: proxyContainersModel
+                    delegate: CheckBox {
+                        required property int index
+                        required property string name
+                        visible: isVpnContainer
+                        text: name
+                        checked: root.selectedBatchProtocols.indexOf(proxyContainersModel.mapToSource(index)) >= 0
+                        onToggled: {
+                            var values = root.selectedBatchProtocols.slice()
+                            var sourceIndex = proxyContainersModel.mapToSource(index)
+                            if (checked && values.indexOf(sourceIndex) < 0) values.push(sourceIndex)
+                            if (!checked) values = values.filter(function(value) { return value !== sourceIndex })
+                            root.selectedBatchProtocols = values
+                        }
+                    }
+                }
+                BasicButtonType {
+                    Layout.fillWidth: true
+                    enabled: !ExportController.batchRunning && root.selectedBatchProtocols.length > 0
+                    text: ExportController.batchRunning
+                          ? qsTr("Creating accounts: %1 of %2").arg(ExportController.batchProgress).arg(ExportController.batchTotal)
+                          : qsTr("Create accounts")
+                    clickedFunc: function() {
+                        var count = parseInt(batchCountField.textField.text)
+                        if (!count || count < 1 || count > 100 || batchNameField.textField.text.trim() === "") return
+                        PageController.showBusyIndicator(true)
+                        ExportController.startAccountBatch(ServersUiController.processedServerId, serverSelector.text,
+                                                           batchNameField.textField.text, count, root.selectedBatchProtocols)
+                    }
+                }
+                Header2Type {
+                    Layout.fillWidth: true
+                    Layout.topMargin: 12
+                    headerText: qsTr("Created accounts")
+                    descriptionText: qsTr("Select one or more accounts to prepare a share message.")
+                }
+                Repeater {
+                    model: ExportController.accountGroups
+                    delegate: CheckBox {
+                        required property var modelData
+                        text: modelData.name + " · " + modelData.serverName + " · " + modelData.methods.length + " " + qsTr("methods")
+                              + (modelData.status === "partial" ? " · " + qsTr("Some methods failed") : "")
+                        checked: root.selectedAccountIds.indexOf(modelData.id) >= 0
+                        onToggled: {
+                            var ids = root.selectedAccountIds.slice()
+                            if (checked && ids.indexOf(modelData.id) < 0) ids.push(modelData.id)
+                            if (!checked) ids = ids.filter(function(value) { return value !== modelData.id })
+                            root.selectedAccountIds = ids
+                        }
+                    }
+                }
+                ComboBox {
+                    id: savedTemplatesBox
+                    Layout.fillWidth: true
+                    model: ExportController.shareTemplates
+                    textRole: "name"
+                    displayText: currentIndex >= 0 ? currentText : qsTr("Choose a saved template")
+                    onActivated: {
+                        if (currentIndex >= 0) templateTextArea.text = model[currentIndex].body
+                    }
+                }
+                TextArea {
+                    id: templateTextArea
+                    Layout.fillWidth: true
+                    Layout.preferredHeight: 140
+                    wrapMode: TextEdit.Wrap
+                    text: "{{NAME}}\nسرور: {{SERVER}}\nروش‌های اتصال: {{PROTOCOLS}}\n{{CONFIGS}}\n{{QR}}"
+                    placeholderText: qsTr("Tags: {{NAME}}, {{SERVER}}, {{PROTOCOLS}}, {{CONFIGS}}, {{QR}}")
+                }
+                RowLayout {
+                    Layout.fillWidth: true
+                    TextField { id: templateNameField; Layout.fillWidth: true; placeholderText: qsTr("Template name") }
+                    BasicButtonType {
+                        text: qsTr("Save template")
+                        clickedFunc: function() {
+                            ExportController.saveShareTemplate(templateNameField.text, templateTextArea.text)
+                            templateNameField.text = ""
+                        }
+                    }
+                }
+                BasicButtonType {
+                    Layout.fillWidth: true
+                    enabled: root.selectedAccountIds.length > 0
+                    text: qsTr("Preview")
+                    clickedFunc: function() {
+                        root.sharePreview = ExportController.renderAccountsTemplate(root.selectedAccountIds, templateTextArea.text)
+                    }
+                }
+                TextArea {
+                    Layout.fillWidth: true
+                    Layout.preferredHeight: 180
+                    readOnly: true
+                    wrapMode: TextEdit.Wrap
+                    textFormat: TextEdit.RichText
+                    text: root.sharePreview
+                    visible: root.sharePreview.length > 0
+                }
+                BasicButtonType {
+                    Layout.fillWidth: true
+                    enabled: root.sharePreview.length > 0
+                    text: qsTr("Share prepared message")
+                    leftImageSource: "qrc:/images/controls/share-2.svg"
+                    clickedFunc: function() {
+                        ExportController.setConfigFromString(root.sharePreview, "cocovpn_accounts.html")
+                    }
+                }
+                ParagraphTextType {
+                    Layout.fillWidth: true
+                    text: qsTr("The {{QR}} tag places QR codes in the preview. Connection settings grant access, so send them only to people you trust.")
+                    color: AmneziaStyle.color.mutedGray
                 }
             }
 

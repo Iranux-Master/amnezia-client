@@ -41,12 +41,12 @@
     <message>
         <location filename="../ui/controllers/allowedDnsUiController.cpp" line="86"/>
         <source>Import completed</source>
-        <translation>درون‌ریزی انجام شد.</translation>
+        <translation>فایل با موفقیت وارد شد.</translation>
     </message>
     <message>
         <location filename="../ui/controllers/allowedDnsUiController.cpp" line="107"/>
         <source>Export completed</source>
-        <translation>برون‌بری انجام شد.</translation>
+        <translation>فایل خروجی ذخیره شد.</translation>
     </message>
 </context>
 <context>
@@ -225,17 +225,17 @@
     <message>
         <location filename="../ui/qml/Components/HomeSplitTunnelingDrawer.qml" line="34"/>
         <source>Split tunneling</source>
-        <translation>جداسازی ترافیک</translation>
+        <translation>انتخاب مسیر اتصال</translation>
     </message>
     <message>
         <location filename="../ui/qml/Components/HomeSplitTunnelingDrawer.qml" line="35"/>
         <source>Allows you to connect to some sites or applications through a VPN connection and bypass others</source>
-        <translation>اجازه می‌دهد به شما که از طریق اتصال ⁦VPN⁩ به برخی از وب‌سایت‌ها یا برنامه‌ها وصل شوید و از دیگران عبور کنید</translation>
+        <translation>تعیین کنید کدام سایت‌ها و برنامه‌ها از ⁦VPN⁩ استفاده کنند و کدام‌ها مستقیم به اینترنت وصل شوند.</translation>
     </message>
     <message>
         <location filename="../ui/qml/Components/HomeSplitTunnelingDrawer.qml" line="45"/>
         <source>Split tunneling on the server</source>
-        <translation>تقسیم تونل‌ها در سرور</translation>
+        <translation>انتخاب مسیر اتصال در سرور</translation>
     </message>
     <message>
         <location filename="../ui/qml/Components/HomeSplitTunnelingDrawer.qml" line="46"/>
@@ -247,7 +247,7 @@ Can&apos;t be disabled for current server</source>
     <message>
         <location filename="../ui/qml/Components/HomeSplitTunnelingDrawer.qml" line="64"/>
         <source>Site-based split tunneling</source>
-        <translation>جداسازی ترافیک بر اساس سایت</translation>
+        <translation>انتخاب مسیر اتصال سایت‌ها</translation>
     </message>
     <message>
         <location filename="../ui/qml/Components/HomeSplitTunnelingDrawer.qml" line="65"/>
@@ -259,12 +259,12 @@ Can&apos;t be disabled for current server</source>
         <location filename="../ui/qml/Components/HomeSplitTunnelingDrawer.qml" line="65"/>
         <location filename="../ui/qml/Components/HomeSplitTunnelingDrawer.qml" line="84"/>
         <source>Disabled</source>
-        <translation>غیر فعال</translation>
+        <translation>غیرفعال</translation>
     </message>
     <message>
         <location filename="../ui/qml/Components/HomeSplitTunnelingDrawer.qml" line="83"/>
         <source>App-based split tunneling</source>
-        <translation>جداسازی ترافیک بر اساس برنامه</translation>
+        <translation>انتخاب مسیر اتصال برنامه‌ها</translation>
     </message>
 </context>
 <context>
@@ -301,19 +301,19 @@ Added containers that were already installed on the server</source>
         <source>
 Already installed containers were found on the server. All installed containers have been added to the application</source>
         <translation>
-کانتینرهای نصب شده بر روی سرور شناسایی شدند. تمام کانتینترهای نصب شده به نرم افزار اضافه شدند</translation>
+سرویس‌های نصب‌شده روی سرور شناسایی و به برنامه اضافه شدند.</translation>
     </message>
     <message>
         <location filename="../ui/controllers/selfhosted/installUiController.cpp" line="299"/>
         <location filename="../ui/controllers/selfhosted/installUiController.cpp" line="340"/>
         <location filename="../ui/controllers/selfhosted/installUiController.cpp" line="364"/>
         <source>Settings updated successfully</source>
-        <translation>تنظیمات با موفقیت ذخیره شدند.</translation>
+        <translation>تنظیمات ذخیره شدند.</translation>
     </message>
     <message>
         <location filename="../ui/controllers/selfhosted/installUiController.cpp" line="487"/>
         <source>Server &apos;%1&apos; was rebooted</source>
-        <translation>سرور ⁨%1⁩ راه اندازی مجدد شد</translation>
+        <translation>سرور «⁨%1⁩» دوباره راه‌اندازی شد.</translation>
     </message>
     <message>
         <location filename="../ui/controllers/selfhosted/installUiController.cpp" line="501"/>
@@ -323,7 +323,7 @@ Already installed containers were found on the server. All installed containers 
     <message>
         <location filename="../ui/controllers/selfhosted/installUiController.cpp" line="510"/>
         <source>All containers from server &apos;%1&apos; have been removed</source>
-        <translation>تمام کانتینترها از سرور ⁨%1⁩ حذف شدند</translation>
+        <translation>همهٔ سرویس‌های نصب‌شده روی سرور «⁨%1⁩» حذف شدند.</translation>
     </message>
     <message>
         <location filename="../ui/controllers/selfhosted/installUiController.cpp" line="536"/>
@@ -383,7 +383,7 @@ Already installed containers were found on the server. All installed containers 
     <message>
         <location filename="../ui/controllers/ipSplitTunnelingUiController.cpp" line="22"/>
         <source>New site added: %1</source>
-        <translation>سایت جدید اضافه‌شد: ⁨%1⁩</translation>
+        <translation>سایت «⁨%1⁩» افزوده شد.</translation>
     </message>
     <message>
         <location filename="../ui/controllers/ipSplitTunnelingUiController.cpp" line="31"/>
@@ -403,12 +403,12 @@ Already installed containers were found on the server. All installed containers 
     <message>
         <location filename="../ui/controllers/ipSplitTunnelingUiController.cpp" line="51"/>
         <source>Import completed</source>
-        <translation>درون‌ریزی انجام شد.</translation>
+        <translation>فایل با موفقیت وارد شد.</translation>
     </message>
     <message>
         <location filename="../ui/controllers/ipSplitTunnelingUiController.cpp" line="64"/>
         <source>Export completed</source>
-        <translation>برون‌بری انجام شد.</translation>
+        <translation>فایل خروجی ذخیره شد.</translation>
     </message>
 </context>
 <context>
@@ -429,23 +429,23 @@ Already installed containers were found on the server. All installed containers 
     <message>
         <location filename="../ui/utils/notificationHandler.cpp" line="57"/>
         <location filename="../ui/utils/notificationHandler.cpp" line="64"/>
-        <source>AmneziaVPN</source>
-        <translation>AmneziaVPN</translation>
+        <source>CoCo VPN</source>
+        <translation>CoCo VPN</translation>
     </message>
     <message>
         <location filename="../ui/utils/notificationHandler.cpp" line="58"/>
         <source>VPN Connected</source>
-        <translation>⁦VPN⁩ وصل شد</translation>
+        <translation>⁦VPN⁩ متصل شد.</translation>
     </message>
     <message>
         <location filename="../ui/utils/notificationHandler.cpp" line="65"/>
         <source>VPN Disconnected</source>
-        <translation>⁦VPN⁩ قطع شد</translation>
+        <translation>⁦VPN⁩ قطع شد.</translation>
     </message>
     <message>
         <location filename="../ui/utils/notificationHandler.cpp" line="88"/>
-        <source>AmneziaVPN notification</source>
-        <translation>اخطار ⁦AmneziaVPN⁩</translation>
+        <source>CoCo VPN notification</source>
+        <translation>اخطار ⁦CoCo VPN⁩</translation>
     </message>
     <message>
         <location filename="../ui/utils/notificationHandler.cpp" line="89"/>
@@ -463,7 +463,7 @@ Already installed containers were found on the server. All installed containers 
     <message>
         <location filename="../ui/qml/Pages2/PageDeinstalling.qml" line="81"/>
         <source>Usually it takes no more than 5 minutes</source>
-        <translation>معمولا بیش از 5 دقیقه طول نمی‌کشد</translation>
+        <translation>این کار معمولاً کمتر از ۵ دقیقه طول می‌کشد.</translation>
     </message>
 </context>
 <context>
@@ -504,12 +504,12 @@ Already installed containers were found on the server. All installed containers 
     <message>
         <location filename="../ui/qml/Pages2/PageHome.qml" line="191"/>
         <source>Split tunneling enabled</source>
-        <translation>مسیرگذاری جداگانه فعال شد.</translation>
+        <translation>انتخاب مسیر اتصال فعال است</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageHome.qml" line="191"/>
         <source>Split tunneling disabled</source>
-        <translation>مسیرگذاری جداگانه غیرفعال شد.</translation>
+        <translation>انتخاب مسیر اتصال غیرفعال است</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageHome.qml" line="426"/>
@@ -1452,12 +1452,12 @@ Already installed containers were found on the server. All installed containers 
     <message>
         <location filename="../ui/qml/Pages2/PageProtocolXraySnapshots.qml" line="93"/>
         <source>Export settings</source>
-        <translation>برون‌بری تنظیمات</translation>
+        <translation>گرفتن خروجی تنظیمات</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageProtocolXraySnapshots.qml" line="110"/>
         <source>Import settings</source>
-        <translation>درون‌ریزی تنظیمات</translation>
+        <translation>وارد کردن تنظیمات</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageProtocolXraySnapshots.qml" line="111"/>
@@ -1472,12 +1472,12 @@ Already installed containers were found on the server. All installed containers 
     <message>
         <location filename="../ui/qml/Pages2/PageProtocolXraySnapshots.qml" line="121"/>
         <source>Failed to import configuration</source>
-        <translation>درون‌ریزی پیکربندی انجام نشد</translation>
+        <translation>تنظیمات از فایل وارد نشدند.</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageProtocolXraySnapshots.qml" line="123"/>
         <source>Configuration imported successfully</source>
-        <translation>پیکربندی با موفقیت درون‌ریزی شد</translation>
+        <translation>تنظیمات از فایل وارد شدند.</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageProtocolXraySnapshots.qml" line="140"/>
@@ -1499,7 +1499,7 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageProtocolXraySnapshots.qml" line="251"/>
         <source>Export configuration</source>
-        <translation>برون‌بری پیکربندی</translation>
+        <translation>گرفتن خروجی تنظیمات</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageProtocolXraySnapshots.qml" line="266"/>
@@ -2008,7 +2008,7 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageServiceDnsSettings.qml" line="53"/>
         <source>The DNS address is the same as the address of your server. You can configure DNS in the settings, under the connections tab.</source>
-        <translation>آدرس ⁦DNS⁩ همان آدرس سرور شماست. میتوانید از قسمت تنظیمات و تب اتصالات ⁦DNS⁩ خود را تنظیم کنید.</translation>
+        <translation>آدرس ⁦DNS⁩ با آدرس سرور شما یکسان است. برای تغییر آن، به تنظیمات اتصال بروید.</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageServiceDnsSettings.qml" line="68"/>
@@ -2203,7 +2203,7 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageServiceMtProxySettings.qml" line="880"/>
         <source>Enable MTProxy</source>
-        <translation>فعال‌سازی ⁦MTProxy⁩</translation>
+        <translation>فعال کردن ⁦MTProxy⁩</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageServiceMtProxySettings.qml" line="908"/>
@@ -2517,7 +2517,7 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageServiceSftpSettings.qml" line="23"/>
         <source>Settings updated successfully</source>
-        <translation>تنظیمات با موفقیت ذخیره شدند.</translation>
+        <translation>تنظیمات ذخیره شدند.</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageServiceSftpSettings.qml" line="64"/>
@@ -2585,7 +2585,7 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageServiceSocksProxySettings.qml" line="25"/>
         <source>Settings updated successfully</source>
-        <translation>تنظیمات با موفقیت ذخیره شدند.</translation>
+        <translation>تنظیمات ذخیره شدند.</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageServiceSocksProxySettings.qml" line="64"/>
@@ -2774,7 +2774,7 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageServiceTProxySettings.qml" line="637"/>
         <source>Enable TProxy</source>
-        <translation>فعال‌سازی ⁦TProxy⁩</translation>
+        <translation>فعال کردن ⁦TProxy⁩</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageServiceTProxySettings.qml" line="666"/>
@@ -3018,7 +3018,7 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageServiceTelemtSettings.qml" line="880"/>
         <source>Enable Telemt</source>
-        <translation>فعال‌سازی ⁦Telemt⁩</translation>
+        <translation>فعال کردن ⁦Telemt⁩</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageServiceTelemtSettings.qml" line="908"/>
@@ -3295,7 +3295,7 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageServiceTorWebsiteSettings.qml" line="24"/>
         <source>Settings updated successfully</source>
-        <translation>تنظیمات با موفقیت ذخیره شدند.</translation>
+        <translation>تنظیمات ذخیره شدند.</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageServiceTorWebsiteSettings.qml" line="59"/>
@@ -3367,8 +3367,8 @@ Create one from the current settings.</source>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettings.qml" line="177"/>
-        <source>About AmneziaVPN</source>
-        <translation>درباره ⁦Amnezia⁩</translation>
+        <source>About CoCo VPN</source>
+        <translation>دربارهٔ ⁦CoCo VPN⁩</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettings.qml" line="188"/>
@@ -3380,8 +3380,8 @@ Create one from the current settings.</source>
     <name>PageSettingsAbout</name>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsAbout.qml" line="21"/>
-        <source>You have the latest version of AmneziaVPN</source>
-        <translation>آخرین نسخه ⁦AmneziaVPN⁩ را دارید</translation>
+        <source>You have the latest version of CoCo VPN</source>
+        <translation>آخرین نسخه ⁦CoCo VPN⁩ را دارید</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsAbout.qml" line="25"/>
@@ -3390,18 +3390,18 @@ Create one from the current settings.</source>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsAbout.qml" line="73"/>
-        <source>Support Amnezia</source>
-        <translation>پشتیبانی از ⁦Amnezia⁩</translation>
+        <source>About CoCo VPN</source>
+        <translation>دربارهٔ ⁦CoCo VPN⁩</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsAbout.qml" line="88"/>
-        <source>Amnezia is a free and open-source application. You can support the developers if you like it.</source>
-        <translation>⁦Amnezia⁩ یک برنامه رایگان و متن باز است. اگر دوست دارید می توانید از توسعه دهندگان حمایت کنید.</translation>
+        <source>CoCo VPN is based on the open-source AmneziaVPN project.</source>
+        <translation>⁦CoCo VPN⁩ بر پایهٔ پروژهٔ متن‌باز ⁦AmneziaVPN⁩ ساخته شده است.</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsAbout.qml" line="98"/>
-        <source>Contacts</source>
-        <translation>مخاطب</translation>
+        <source>Source code</source>
+        <translation>کد منبع</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsAbout.qml" line="131"/>
@@ -3460,8 +3460,8 @@ Create one from the current settings.</source>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsAbout.qml" line="228"/>
-        <source>Discover the source code</source>
-        <translation>مشاهده کد منبع</translation>
+        <source>CoCo VPN source code</source>
+        <translation>کد منبع ⁦CoCo VPN⁩</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsAbout.qml" line="231"/>
@@ -3470,13 +3470,13 @@ Create one from the current settings.</source>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsAbout.qml" line="238"/>
-        <source>Website</source>
-        <translation>وب سایت</translation>
+        <source>Original project</source>
+        <translation>پروژهٔ اصلی</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsAbout.qml" line="239"/>
-        <source>Visit official website</source>
-        <translation>مشاهده وب‌سایت رسمی</translation>
+        <source>AmneziaVPN open-source project</source>
+        <translation>پروژهٔ متن‌باز ⁦AmneziaVPN⁩</translation>
     </message>
 </context>
 <context>
@@ -3657,8 +3657,8 @@ Create one from the current settings.</source>
     <name>PageSettingsApiNativeConfigs</name>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsApiNativeConfigs.qml" line="23"/>
-        <source>Save AmneziaVPN config</source>
-        <translation>ذخیره تنظیمات ⁦AmneziaVPN⁩</translation>
+        <source>Save CoCo VPN config</source>
+        <translation>ذخیره تنظیمات ⁦CoCo VPN⁩</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsApiNativeConfigs.qml" line="60"/>
@@ -3893,8 +3893,8 @@ Create one from the current settings.</source>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsApiSubscriptionKey.qml" line="121"/>
-        <source>Save AmneziaVPN config</source>
-        <translation>ذخیره تنظیمات ⁦AmneziaVPN⁩</translation>
+        <source>Save CoCo VPN config</source>
+        <translation>ذخیره تنظیمات ⁦CoCo VPN⁩</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsApiSubscriptionKey.qml" line="122"/>
@@ -3965,7 +3965,7 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsAppSplitTunneling.qml" line="27"/>
         <source>Cannot change split tunneling settings during active connection</source>
-        <translation>نمی توان تنظیمات تونل تقسیم را در طول اتصال فعال تغییر دادنمی‌توان تنظیمات تقسیم تونلینگ را در حین اتصال فعال تغییر داد.</translation>
+        <translation>برای تغییر مسیر اتصال سایت‌ها یا برنامه‌ها، ابتدا اتصال فعلی را قطع کنید.</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsAppSplitTunneling.qml" line="49"/>
@@ -3980,7 +3980,7 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsAppSplitTunneling.qml" line="87"/>
         <source>App split tunneling</source>
-        <translation>تقسیم تونلینگ برنامه‌ها</translation>
+        <translation>انتخاب مسیر اتصال برنامه‌ها</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsAppSplitTunneling.qml" line="112"/>
@@ -3990,7 +3990,7 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsAppSplitTunneling.qml" line="154"/>
         <source>Only &quot;Apps from the list should not have access via VPN&quot; mode is available on Windows</source>
-        <translation>در ⁦Windows⁩ تنها حالت «برنامه‌های موجود در فهرست نباید از طریق ⁦VPN⁩ دسترسی داشته باشند» در دسترس است</translation>
+        <translation>در ویندوز فقط می‌توانید برنامه‌های فهرست را از ⁦VPN⁩ مستثنا کنید.</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsAppSplitTunneling.qml" line="200"/>
@@ -4048,12 +4048,12 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="108"/>
         <source>Auto start</source>
-        <translation>شروع خودکار</translation>
+        <translation>اجرای خودکار</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="109"/>
         <source>Launch the application every time the device is starts</source>
-        <translation>راه‌اندازی برنامه با هر بار روشن شدن دستگاه</translation>
+        <translation>برنامه پس از روشن شدن دستگاه خودکار باز شود.</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="131"/>
@@ -4063,17 +4063,17 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="132"/>
         <source>Connect to VPN on app start</source>
-        <translation>اتصال به ویپی‌ان با شروع برنامه</translation>
+        <translation>با باز شدن برنامه، به ⁦VPN⁩ وصل شود.</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="154"/>
         <source>Start minimized</source>
-        <translation>شروع به صورت کوچک</translation>
+        <translation>شروع در حالت کوچک‌شده</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="155"/>
         <source>Launch application minimized (works with autostart option turned on)</source>
-        <translation>اجرای برنامه به‌صورت کوچک‌شده (با فعال بودن اجرای خودکار کار می‌کند)</translation>
+        <translation>اگر اجرای خودکار فعال باشد، برنامه به‌صورت کوچک‌شده باز می‌شود.</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="180"/>
@@ -4093,7 +4093,7 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="202"/>
         <source>Check for a new app version at startup</source>
-        <translation>بررسی نسخه جدید برنامه هنگام راه‌اندازی</translation>
+        <translation>هنگام باز شدن برنامه، نسخهٔ جدید بررسی شود.</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="226"/>
@@ -4113,7 +4113,7 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="243"/>
         <source>Disabled</source>
-        <translation>غیر فعال</translation>
+        <translation>غیرفعال</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="258"/>
@@ -4165,8 +4165,8 @@ Create one from the current settings.</source>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsBackup.qml" line="88"/>
-        <source>The backup will contain your passwords and private keys for all servers added to AmneziaVPN. Keep this information in a secure place.</source>
-        <translation>پشتیبان حاوی رمزهای عبور و کلیدهای خصوصی شما برای تمام سرورهای اضافه شده به ⁦AmneziaVPN⁩ خواهد بود. این اطلاعات را در یک مکان امن نگه دارید</translation>
+        <source>The backup will contain your passwords and private keys for all servers added to CoCo VPN. Keep this information in a secure place.</source>
+        <translation>پشتیبان حاوی رمزهای عبور و کلیدهای خصوصی شما برای تمام سرورهای اضافه شده به ⁦CoCo VPN⁩ خواهد بود. این اطلاعات را در یک مکان امن نگه دارید</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsBackup.qml" line="102"/>
@@ -4255,32 +4255,32 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsConnection.qml" line="99"/>
         <source>Site-based split tunneling</source>
-        <translation>جداسازی ترافیک بر اساس سایت</translation>
+        <translation>انتخاب مسیر اتصال سایت‌ها</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsConnection.qml" line="100"/>
         <source>Allows you to select which sites you want to access through the VPN</source>
-        <translation>میتوانید مشخص کنید که چه سایت‌هایی از ⁦VPN⁩ استفاده کنند</translation>
+        <translation>انتخاب کنید کدام سایت‌ها از ⁦VPN⁩ استفاده کنند و کدام‌ها مستقیم وصل شوند.</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsConnection.qml" line="123"/>
         <source>App-based split tunneling</source>
-        <translation>جداسازی ترافیک بر اساس برنامه</translation>
+        <translation>انتخاب مسیر اتصال برنامه‌ها</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsConnection.qml" line="124"/>
         <source>Allows you to use the VPN only for certain Apps</source>
-        <translation>به شما امکان می دهد از ⁦VPN⁩ فقط برای برخی برنامه ها استفاده کنید</translation>
+        <translation>انتخاب کنید کدام برنامه‌ها از ⁦VPN⁩ استفاده کنند و کدام‌ها مستقیم وصل شوند.</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsConnection.qml" line="142"/>
         <source>KillSwitch</source>
-        <translation>KillSwitch</translation>
+        <translation>قطع اضطراری اینترنت</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsConnection.qml" line="143"/>
         <source>Blocks network connections without VPN</source>
-        <translation>اتصال‌های شبکه بدون ⁦VPN⁩ را مسدود می‌کند</translation>
+        <translation>وقتی ⁦VPN⁩ قطع است، دسترسی به اینترنت را مسدود می‌کند.</translation>
     </message>
 </context>
 <context>
@@ -4356,7 +4356,7 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsKillSwitch.qml" line="40"/>
         <source>KillSwitch</source>
-        <translation>KillSwitch</translation>
+        <translation>قطع اضطراری اینترنت</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsKillSwitch.qml" line="41"/>
@@ -4371,7 +4371,7 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsKillSwitch.qml" line="68"/>
         <source>Soft KillSwitch</source>
-        <translation>Soft KillSwitch</translation>
+        <translation>قطع اضطراری هنگام قطع ناگهانی اتصال</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsKillSwitch.qml" line="69"/>
@@ -4381,7 +4381,7 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsKillSwitch.qml" line="92"/>
         <source>Strict KillSwitch</source>
-        <translation>Strict KillSwitch</translation>
+        <translation>قطع کامل اینترنت بدون اتصال امن</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsKillSwitch.qml" line="93"/>
@@ -4396,7 +4396,7 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsKillSwitch.qml" line="97"/>
         <source>If the VPN disconnects or drops while Strict KillSwitch is enabled, internet access will be blocked. To restore access, reconnect VPN or disable/change the KillSwitch.</source>
-        <translation>اگر هنگام فعال بودن ⁦KillSwitch⁩ سخت، ⁦VPN⁩ قطع شود، دسترسی به اینترنت مسدود می‌شود. برای بازگرداندن دسترسی، ⁦VPN⁩ را دوباره وصل کنید یا ⁦KillSwitch⁩ را غیرفعال/تغییر دهید.</translation>
+        <translation>با فعال بودن این حالت، اگر ⁦VPN⁩ قطع شود، اینترنت دستگاه هم قطع می‌شود. برای بازگرداندن اینترنت، دوباره به ⁦VPN⁩ وصل شوید یا این گزینه را غیرفعال کنید.</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsKillSwitch.qml" line="98"/>
@@ -4454,12 +4454,12 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsKillSwitchExceptions.qml" line="167"/>
         <source>Import / Export addresses</source>
-        <translation>درون‌ریزی / برون‌بری آدرس‌ها</translation>
+        <translation>وارد کردن یا ذخیره فهرست آدرس‌ها</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsKillSwitchExceptions.qml" line="174"/>
         <source>Import</source>
-        <translation>درون‌ریزی</translation>
+        <translation>وارد کردن</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsKillSwitchExceptions.qml" line="187"/>
@@ -4481,7 +4481,7 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsKillSwitchExceptions.qml" line="254"/>
         <source>Import address list</source>
-        <translation>درون‌ریزی فهرست آدرس‌ها</translation>
+        <translation>وارد کردن فهرست آدرس‌ها</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsKillSwitchExceptions.qml" line="261"/>
@@ -4497,7 +4497,7 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsKillSwitchExceptions.qml" line="277"/>
         <source>Add imported addresses to existing ones</source>
-        <translation>افزودن آدرس‌های درون‌ریزی‌شده به آدرس‌های موجود</translation>
+        <translation>افزودن آدرس‌های فایل به فهرست فعلی</translation>
     </message>
 </context>
 <context>
@@ -4515,7 +4515,7 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsLogging.qml" line="63"/>
         <source>Enable logs</source>
-        <translation>فعال‌سازی گزارش‌ها</translation>
+        <translation>ثبت گزارش‌ها</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsLogging.qml" line="80"/>
@@ -4550,7 +4550,7 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsLogging.qml" line="157"/>
         <source>Export logs</source>
-        <translation>برون‌بری گزارش‌ها</translation>
+        <translation>گرفتن خروجی گزارش‌ها</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsLogging.qml" line="181"/>
@@ -4829,27 +4829,27 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsSplitTunneling.qml" line="29"/>
         <source>Cannot change split tunneling settings during active connection</source>
-        <translation>نمی توان تنظیمات تونل تقسیم را در طول اتصال فعال تغییر داد</translation>
+        <translation>برای تغییر مسیر اتصال سایت‌ها یا برنامه‌ها، ابتدا اتصال فعلی را قطع کنید.</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsSplitTunneling.qml" line="32"/>
         <source>Default server does not support split tunneling function</source>
-        <translation>سرور پیش‌فرض از عملکرد تونل‌سازی تقسیم شده پشتیبانی نمی‌کند</translation>
+        <translation>سرور پیش‌فرض امکان انتخاب مسیر اتصال را ندارد.</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsSplitTunneling.qml" line="65"/>
         <source>Only the sites listed here will be accessed through the VPN</source>
-        <translation>تنها سایت‌های موجود در اینجا از طریق ⁦VPN⁩ دسترسی داده خواهند شد</translation>
+        <translation>فقط سایت‌های این فهرست از ⁦VPN⁩ استفاده می‌کنند؛ بقیه مستقیم وصل می‌شوند.</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsSplitTunneling.qml" line="70"/>
         <source>Addresses from the list should not be accessed via VPN</source>
-        <translation>دسترسی به آدرس‌های فهرست بدون ⁦VPN⁩</translation>
+        <translation>سایت‌های این فهرست بدون ⁦VPN⁩ و به‌صورت مستقیم باز می‌شوند.</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsSplitTunneling.qml" line="101"/>
         <source>Split tunneling</source>
-        <translation>جداسازی ترافیک</translation>
+        <translation>انتخاب مسیر اتصال</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsSplitTunneling.qml" line="128"/>
@@ -4886,7 +4886,7 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsSplitTunneling.qml" line="315"/>
         <source>Import</source>
-        <translation>درون‌ریزی</translation>
+        <translation>وارد کردن</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsSplitTunneling.qml" line="328"/>
@@ -5117,12 +5117,12 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageSetupWizardConfigSource.qml" line="87"/>
         <source>Enable logs</source>
-        <translation>فعال‌سازی گزارش‌ها</translation>
+        <translation>ثبت گزارش‌ها</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSetupWizardConfigSource.qml" line="101"/>
         <source>Export client logs</source>
-        <translation>برون‌بری گزارش‌های کلاینت</translation>
+        <translation>گرفتن خروجی گزارش‌های برنامه</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSetupWizardConfigSource.qml" line="111"/>
@@ -5201,8 +5201,8 @@ Create one from the current settings.</source>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSetupWizardConfigSource.qml" line="304"/>
-        <source>Configure Amnezia VPN on your own server</source>
-        <translation>پیکربندی ⁦VPN Amnezia⁩ بر روی سرور خودتان</translation>
+        <source>Set up CoCo VPN on your own server</source>
+        <translation>راه‌اندازی ⁦CoCo VPN⁩ روی سرور شخصی شما</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSetupWizardConfigSource.qml" line="316"/>
@@ -5364,7 +5364,7 @@ Create one from the current settings.</source>
         <location filename="../ui/qml/Pages2/PageSetupWizardInstalling.qml" line="25"/>
         <location filename="../ui/qml/Pages2/PageSetupWizardInstalling.qml" line="69"/>
         <source>Usually it takes no more than 5 minutes</source>
-        <translation>معمولا بیش از 5 دقیقه طول نمی‌کشد</translation>
+        <translation>این کار معمولاً کمتر از ۵ دقیقه طول می‌کشد.</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSetupWizardInstalling.qml" line="57"/>
@@ -5486,7 +5486,7 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageSetupWizardProtocols.qml" line="79"/>
         <source>Choose the one with the highest priority for you. Later, you can install other protocols and additional services, such as DNS proxy and SFTP.</source>
-        <translation>پروتکلی که بیشترین اولویت را برای شما دارد انتخاب کنید. بعدا، میتوانید پروتکل‌ها و سرویس‌های اضافه مانند پروکسی ⁦DNS⁩ و ⁦SFTP⁩ را هم نصب کنید.</translation>
+        <translation>پروتکلی را انتخاب کنید که برایتان مناسب‌تر است. بعداً می‌توانید پروتکل‌ها و سرویس‌های دیگری مانند ⁦DNS⁩ و ⁦SFTP⁩ را نیز نصب کنید.</translation>
     </message>
 </context>
 <context>
@@ -5553,7 +5553,7 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageSetupWizardViewConfig.qml" line="132"/>
         <source>Enable WireGuard obfuscation. It may be useful if WireGuard is blocked on your provider.</source>
-        <translation>اگر ارائه‌دهندهٔ اینترنت شما ⁦WireGuard⁩ را مسدود کرده است، پنهان‌سازی ترافیک آن را فعال کنید.</translation>
+        <translation>اگر شرکت اینترنت شما اتصال ⁦WireGuard⁩ را مسدود کرده است، این گزینه را فعال کنید تا شناسایی ترافیک آن دشوارتر شود.</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSetupWizardViewConfig.qml" line="163"/>
@@ -5568,6 +5568,26 @@ Create one from the current settings.</source>
 </context>
 <context>
     <name>PageShare</name>
+    <message><source>Accounts</source><translation>حساب‌ها</translation></message>
+    <message><source>Account creation finished: %1 succeeded, %2 failed</source><translation>ساخت حساب‌ها تمام شد: ⁨%1⁩ موفق و ⁨%2⁩ ناموفق.</translation></message>
+    <message><source>Create account groups</source><translation>ساخت گروهی حساب‌ها</translation></message>
+    <message><source>Each account gets separate credentials for every selected connection method.</source><translation>برای هر حساب و هر روش اتصال انتخاب‌شده، اطلاعات ورود جداگانه ساخته می‌شود.</translation></message>
+    <message><source>Account name</source><translation>نام حساب</translation></message>
+    <message><source>Number of accounts (1–100)</source><translation>تعداد حساب‌ها (۱ تا ۱۰۰)</translation></message>
+    <message><source>Select installed VPN methods</source><translation>روش‌های نصب‌شدهٔ اتصال را انتخاب کنید</translation></message>
+    <message><source>Creating accounts: %1 of %2</source><translation>در حال ساخت حساب‌ها: ⁨%1⁩ از ⁨%2⁩</translation></message>
+    <message><source>Create accounts</source><translation>ساخت حساب‌ها</translation></message>
+    <message><source>Created accounts</source><translation>حساب‌های ساخته‌شده</translation></message>
+    <message><source>Some methods failed</source><translation>ساخت بعضی روش‌ها ناموفق بود</translation></message>
+    <message><source>Select one or more accounts to prepare a share message.</source><translation>یک یا چند حساب را برای آماده‌کردن پیام ارسال انتخاب کنید.</translation></message>
+    <message><source>methods</source><translation>روش اتصال</translation></message>
+    <message><source>Choose a saved template</source><translation>یک قالب ذخیره‌شده انتخاب کنید</translation></message>
+    <message><source>Tags: {{NAME}}, {{SERVER}}, {{PROTOCOLS}}, {{CONFIGS}}, {{QR}}</source><translation>برچسب‌ها: {{NAME}}، {{SERVER}}، {{PROTOCOLS}}، {{CONFIGS}}، {{QR}}</translation></message>
+    <message><source>Template name</source><translation>نام قالب</translation></message>
+    <message><source>Save template</source><translation>ذخیرهٔ قالب</translation></message>
+    <message><source>Preview</source><translation>پیش‌نمایش</translation></message>
+    <message><source>Share prepared message</source><translation>ارسال پیام آماده‌شده</translation></message>
+    <message><source>The {{QR}} tag places QR codes in the preview. Connection settings grant access, so send them only to people you trust.</source><translation>برچسب {{QR}} کدهای اتصال را در محل دلخواهِ پیش‌نمایش قرار می‌دهد. تنظیمات اتصال امکان دسترسی می‌دهند؛ آن‌ها را فقط برای افراد مورداعتماد بفرستید.</translation></message>
     <message>
         <location filename="../ui/qml/Pages2/PageShare.qml" line="35"/>
         <source>Config revoked</source>
@@ -5575,8 +5595,8 @@ Create one from the current settings.</source>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageShare.qml" line="51"/>
-        <source>Save AmneziaVPN config</source>
-        <translation>ذخیره تنظیمات ⁦AmneziaVPN⁩</translation>
+        <source>Save CoCo VPN config</source>
+        <translation>ذخیره تنظیمات ⁦CoCo VPN⁩</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageShare.qml" line="58"/>
@@ -5610,8 +5630,8 @@ Create one from the current settings.</source>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageShare.qml" line="108"/>
-        <source>For the AmneziaVPN app</source>
-        <translation>برای برنامه ⁦AmneziaVPN⁩</translation>
+        <source>For the CoCo VPN app</source>
+        <translation>برای برنامه ⁦CoCo VPN⁩</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageShare.qml" line="113"/>
@@ -5652,7 +5672,7 @@ Create one from the current settings.</source>
         <location filename="../ui/qml/Pages2/PageShare.qml" line="198"/>
         <location filename="../ui/qml/Pages2/PageShare.qml" line="541"/>
         <source>Share</source>
-        <translation>اشتراک‌گذاری</translation>
+        <translation>به اشتراک گذاشتن</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageShare.qml" line="233"/>
@@ -5769,7 +5789,7 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageShareConnection.qml" line="25"/>
         <source>Share</source>
-        <translation>اشتراک‌گذاری</translation>
+        <translation>به اشتراک گذاشتن</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageShareConnection.qml" line="26"/>
@@ -5778,8 +5798,8 @@ Create one from the current settings.</source>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageShareConnection.qml" line="30"/>
-        <source>Save AmneziaVPN config</source>
-        <translation>ذخیره تنظیمات ⁦AmneziaVPN⁩</translation>
+        <source>Save CoCo VPN config</source>
+        <translation>ذخیره تنظیمات ⁦CoCo VPN⁩</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageShareConnection.qml" line="150"/>
@@ -5819,7 +5839,7 @@ Create one from the current settings.</source>
         <location filename="../ui/qml/Pages2/PageShareFullAccess.qml" line="67"/>
         <source>We recommend that you use full access to the server only for your own additional devices.
 </source>
-        <translation>ما پیشنهاد میکنیم که ازحالت دسترسی کامل به سرور فقط برای دستگاه‌های دیگر خودتان استفاده کنید.
+        <translation>توصیه می‌کنیم دسترسی کامل به سرور را فقط برای دستگاه‌های خودتان به اشتراک بگذارید.
 </translation>
     </message>
     <message>
@@ -5846,7 +5866,7 @@ Create one from the current settings.</source>
     <message>
         <location filename="../ui/qml/Pages2/PageShareFullAccess.qml" line="147"/>
         <source>Share</source>
-        <translation>اشتراک‌گذاری</translation>
+        <translation>به اشتراک گذاشتن</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageShareFullAccess.qml" line="155"/>
@@ -5881,8 +5901,8 @@ Create one from the current settings.</source>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageUpdate.qml" line="26"/>
-        <source>Download failed. Download manually from amnezia.org</source>
-        <translation>دانلود ناموفق بود. به‌صورت دستی از ⁦amnezia.org⁩ دانلود کنید</translation>
+        <source>Download failed. Visit the CoCo VPN website to download manually.</source>
+        <translation>بارگیری انجام نشد. برای دریافت دستی، به وب‌سایت ⁦CoCo VPN⁩ بروید.</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageUpdate.qml" line="169"/>
@@ -6340,7 +6360,7 @@ Create one from the current settings.</source>
     <message>
         <location filename="../core/utils/errorStrings.cpp" line="99"/>
         <source>This email address has already been used to activate a trial</source>
-        <translation>این آدرس ایمیل قبلاً برای فعال‌سازی نسخه آزمایشی استفاده شده است</translation>
+        <translation>با این آدرس ایمیل قبلاً دورهٔ آزمایشی فعال شده است.</translation>
     </message>
     <message>
         <location filename="../core/utils/errorStrings.cpp" line="100"/>
@@ -6410,7 +6430,7 @@ Create one from the current settings.</source>
     <message>
         <location filename="../core/utils/containers/containerUtils.cpp" line="115"/>
         <source>Create a file vault on your server to securely store and transfer files.</source>
-        <translation>ساختن یک گنجانده فایل بر روی سرور شما برای ذخیره و انتقال ایمن فایل‌ها.</translation>
+        <translation>روی سرور خود فضای ذخیره‌سازی امن بسازید و فایل‌هایتان را نگهداری یا منتقل کنید.</translation>
     </message>
     <message>
         <location filename="../core/utils/containers/containerUtils.cpp" line="187"/>
@@ -6420,13 +6440,13 @@ Create one from the current settings.</source>
     <message>
         <location filename="../core/utils/containers/containerUtils.cpp" line="78"/>
         <source>SFTP file sharing service</source>
-        <translation>سرویس فایل اشتراک ⁦SFTP⁩</translation>
+        <translation>اشتراک فایل با ⁦SFTP⁩</translation>
     </message>
     <message>
         <location filename="../core/utils/containers/containerUtils.cpp" line="76"/>
         <location filename="../core/utils/containers/containerUtils.cpp" line="186"/>
         <source>Website in Tor network</source>
-        <translation>وب سایت در شبکه ⁦Tor⁩</translation>
+        <translation>وب‌سایت در شبکهٔ ⁦Tor⁩</translation>
     </message>
     <message>
         <location filename="../core/utils/containers/containerUtils.cpp" line="77"/>
@@ -6482,14 +6502,14 @@ Create one from the current settings.</source>
         <source>OpenVPN is one of the most popular and reliable VPN protocols. It uses SSL/TLS encryption, supports a wide variety of devices and operating systems, and is continuously improved by the community due to its open-source nature. It provides a good balance between speed and security but is easily recognized by DPI systems, making it susceptible to blocking.
 
 Features:
-* Available on all AmneziaVPN platforms
+* Available on all CoCo VPN platforms
 * Normal battery consumption on mobile devices
 * Flexible customization for various devices and OS
 * Operates over both TCP and UDP protocols</source>
         <translation>⁦OpenVPN⁩ یکی از محبوب‌ترین و قابل‌اعتمادترین پروتکل‌های ⁦VPN⁩ است. از رمزنگاری ⁦SSL/TLS⁩ استفاده می‌کند، از طیف گسترده‌ای از دستگاه‌ها و سیستم‌عامل‌ها پشتیبانی می‌کند و به دلیل متن‌باز بودن، به‌طور مستمر توسط جامعه کاربران بهبود می‌یابد. تعادل خوبی میان سرعت و امنیت برقرار می‌کند، اما سامانه‌های ⁦DPI⁩ به‌راحتی آن را تشخیص می‌دهند و در نتیجه در برابر مسدودسازی آسیب‌پذیر است.
 
 ویژگی‌ها:
-* در دسترس در همه پلتفرم‌های ⁦AmneziaVPN⁩
+* در دسترس در همه پلتفرم‌های ⁦CoCo VPN⁩
 * مصرف باتری معمولی در دستگاه‌های همراه
 * شخصی‌سازی انعطاف‌پذیر برای دستگاه‌ها و سیستم‌عامل‌های مختلف
 * کار با هر دو پروتکل ⁦TCP⁩ و ⁦UDP⁩</translation>
@@ -6499,7 +6519,7 @@ Features:
         <source>WireGuard is a modern, streamlined VPN protocol offering stable connectivity and excellent performance across all devices. It uses fixed encryption settings, delivering lower latency and higher data transfer speeds compared to OpenVPN. However, WireGuard is easily identifiable by DPI systems due to its distinctive packet signatures, making it susceptible to blocking.
 
 Features:
-* Available on all AmneziaVPN platforms
+* Available on all CoCo VPN platforms
 * Low power consumption on mobile devices
 * Minimal configuration required
 * Easily detected by DPI systems (susceptible to blocking)
@@ -6507,7 +6527,7 @@ Features:
         <translation>⁦WireGuard⁩ یک پروتکل ⁦VPN⁩ مدرن و ساده است که ارتباط پایدار و عملکرد عالی را در همه دستگاه‌ها ارائه می‌دهد. از تنظیمات رمزنگاری ثابت استفاده می‌کند و در مقایسه با ⁦OpenVPN⁩ تأخیر کمتر و سرعت انتقال داده بالاتری دارد. با این حال، ⁦WireGuard⁩ به دلیل امضاهای متمایز بسته‌هایش به‌راحتی توسط سامانه‌های ⁦DPI⁩ شناسایی می‌شود و در برابر مسدودسازی آسیب‌پذیر است.
 
 ویژگی‌ها:
-* در دسترس در همه پلتفرم‌های ⁦AmneziaVPN⁩
+* در دسترس در همه پلتفرم‌های ⁦CoCo VPN⁩
 * مصرف انرژی کم در دستگاه‌های همراه
 * نیاز به حداقل تنظیمات
 * شناسایی آسان توسط سامانه‌های ⁦DPI⁩ (آسیب‌پذیر در برابر مسدودسازی)
@@ -6520,7 +6540,7 @@ Features:
 AmneziaWG is an excellent choice for those seeking a fast, stealthy VPN connection.
 
 Features:
-* Available on all AmneziaVPN platforms
+* Available on all CoCo VPN platforms
 * Low battery consumption on mobile devices
 * Minimal settings required
 * Undetectable by traffic analysis systems (DPI)
@@ -6530,7 +6550,7 @@ Features:
 ⁦AmneziaWG⁩ گزینه‌ای بسیار مناسب برای کسانی است که به دنبال اتصال ⁦VPN⁩ سریع و پنهان هستند.
 
 ویژگی‌ها:
-* در دسترس در همه پلتفرم‌های ⁦AmneziaVPN⁩
+* در دسترس در همه پلتفرم‌های ⁦CoCo VPN⁩
 * مصرف باتری کم در دستگاه‌های همراه
 * نیاز به حداقل تنظیمات
 * غیرقابل شناسایی توسط سامانه‌های تحلیل ترافیک (⁦DPI⁩)
@@ -6552,7 +6572,7 @@ Features:
 
 ویژگی‌ها:
 * مقاوم در برابر کاوش فعال و شناسایی ⁦DPI⁩
-* بدون نیاز به تنظیمات خاص برای پنهان‌سازی ترافیک
+* بدون نیاز به تنظیمات خاص برای پنهان کردن ترافیک
 * بسیار کارآمد در مناطق با سانسور شدید
 * مصرف باتری بسیار کم در دستگاه‌ها
 * کار با پروتکل ⁦TCP⁩</translation>
@@ -6562,7 +6582,7 @@ Features:
         <source>IKEv2, combined with IPSec encryption, is a modern and reliable VPN protocol. It reconnects quickly when switching networks or devices, making it ideal for dynamic network environments. While it provides good security and speed, it&apos;s easily recognized by DPI systems and susceptible to blocking.
 
 Features:
-* Available in AmneziaVPN only on Windows
+* Available in CoCo VPN only on Windows
 * Low battery consumption on mobile devices
 * Minimal configuration required
 * Detectable by DPI analysis systems(easily blocked)
@@ -6570,7 +6590,7 @@ Features:
         <translation>⁦IKEv2⁩ در ترکیب با رمزنگاری ⁦IPSec⁩ یک پروتکل مدرن و قابل‌اعتماد ⁦VPN⁩ است. هنگام تغییر شبکه یا دستگاه به‌سرعت اتصال را برقرار می‌کند و از این رو برای محیط‌های شبکه متغیر بسیار مناسب است. با آنکه امنیت و سرعت خوبی ارائه می‌دهد، سامانه‌های ⁦DPI⁩ به‌راحتی آن را تشخیص می‌دهند و در برابر مسدودسازی آسیب‌پذیر است.
 
 ویژگی‌ها:
-* در ⁦AmneziaVPN⁩ تنها روی ⁦Windows⁩ در دسترس است
+* در ⁦CoCo VPN⁩ تنها روی ⁦Windows⁩ در دسترس است
 * مصرف باتری کم در دستگاه‌های همراه
 * نیاز به حداقل تنظیمات
 * قابل شناسایی توسط سامانه‌های تحلیل ⁦DPI⁩ (به‌راحتی مسدود می‌شود)
@@ -6584,7 +6604,7 @@ Features:
     <message>
         <location filename="../core/utils/containers/containerUtils.cpp" line="200"/>
         <source>Telegram MTProto proxy powered by Telemt (Rust). Supports secure and TLS fronting modes with optional traffic masking.</source>
-        <translation>پروکسی ⁦Telegram MTProto⁩ بر پایه ⁦Telemt⁩ (⁦Rust⁩). از حالت امن و حالت ⁦TLS fronting⁩ با قابلیت اختیاری پنهان‌سازی ترافیک پشتیبانی می‌کند.</translation>
+        <translation>پروکسی ⁦MTProto⁩ تلگرام بر پایهٔ ⁦Telemt⁩ ساخته شده است. از حالت امن و ⁦TLS fronting⁩ پشتیبانی می‌کند و می‌تواند ترافیک را نیز پنهان کند.</translation>
     </message>
     <message>
         <location filename="../core/utils/containers/containerUtils.cpp" line="203"/>
@@ -6611,7 +6631,7 @@ Features:
         <location filename="../core/utils/containers/containerUtils.cpp" line="102"/>
         <location filename="../ui/models/containersModel.cpp" line="41"/>
         <source>AmneziaWG is a special protocol from Amnezia based on WireGuard. It provides high connection speed and ensures stable operation even in the most challenging network conditions.</source>
-        <translation>⁦AmneziaWG⁩ نسخه‌ای از ⁦WireGuard⁩ با قابلیت پنهان‌سازی ترافیک است. اتصال سریع و پایداری فراهم می‌کند، حتی در شبکه‌هایی که محدودیت دارند.</translation>
+        <translation>⁦AmneziaWG⁩ بر پایهٔ ⁦WireGuard⁩ ساخته شده و می‌تواند ترافیک اتصال را پنهان کند. حتی در شبکه‌های محدود نیز اتصال سریع و پایداری فراهم می‌کند.</translation>
     </message>
     <message>
         <location filename="../core/utils/containers/containerUtils.cpp" line="105"/>
@@ -6957,7 +6977,7 @@ For more detailed information, you can
     <message>
         <location filename="../ui/controllers/api/subscriptionUiController.cpp" line="605"/>
         <source>This email address has already been used to activate a trial. Like the service? Upgrade to Premium</source>
-        <translation>این آدرس ایمیل قبلاً برای فعال‌سازی نسخه آزمایشی استفاده شده است. از سرویس راضی هستید؟ به ⁦Premium⁩ ارتقا دهید</translation>
+        <translation>با این آدرس ایمیل قبلاً دورهٔ آزمایشی فعال شده است. اگر می‌خواهید ادامه دهید، اشتراک ⁦Premium⁩ را انتخاب کنید.</translation>
     </message>
     <message>
         <location filename="../ui/controllers/api/subscriptionUiController.cpp" line="665"/>

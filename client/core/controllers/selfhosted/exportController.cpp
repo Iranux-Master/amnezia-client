@@ -84,6 +84,7 @@ ExportController::ExportResult ExportController::generateConnectionConfig(const 
         containerConfig.protocolConfig = newProtocolConfig;
         
         QString clientId = newProtocolConfig.clientId();
+        result.clientId = clientId;
         if (!clientId.isEmpty()) {
             emit appendClientRequested(serverId, clientId, clientName, container);
         }
@@ -153,6 +154,7 @@ ExportController::NativeConfigResult ExportController::generateNativeConfig(cons
     if (result.errorCode != ErrorCode::NoError) {
         return result;
     }
+    result.clientId = newProtocolConfig.clientId();
 
     ExportSettings exportSettings = { { dns.first, dns.second } };
     ProtocolConfig processedConfig = configurator->processConfigWithExportSettings(exportSettings, newProtocolConfig);
@@ -189,6 +191,7 @@ ExportController::ExportResult ExportController::generateOpenVpnConfig(const QSt
         result.errorCode = nativeResult.errorCode;
         return result;
     }
+    result.clientId = nativeResult.clientId;
 
     QStringList lines = nativeResult.jsonNativeConfig.value(configKey::config).toString().replace("\r", "").split("\n");
     for (const QString &line : std::as_const(lines)) {
@@ -215,6 +218,7 @@ ExportController::ExportResult ExportController::generateWireGuardConfig(const Q
         result.errorCode = nativeResult.errorCode;
         return result;
     }
+    result.clientId = nativeResult.clientId;
 
     QStringList lines = nativeResult.jsonNativeConfig.value(configKey::config).toString().replace("\r", "").split("\n");
     for (const QString &line : std::as_const(lines)) {
@@ -249,6 +253,7 @@ ExportController::ExportResult ExportController::generateAwgConfig(const QString
         result.errorCode = nativeResult.errorCode;
         return result;
     }
+    result.clientId = nativeResult.clientId;
 
     QStringList lines = nativeResult.jsonNativeConfig.value(configKey::config).toString().replace("\r", "").split("\n");
     for (const QString &line : std::as_const(lines)) {
@@ -279,6 +284,7 @@ ExportController::ExportResult ExportController::generateXrayConfig(const QStrin
         result.errorCode = nativeResult.errorCode;
         return result;
     }
+    result.clientId = nativeResult.clientId;
 
     QStringList lines = QString(QJsonDocument(nativeResult.jsonNativeConfig).toJson()).replace("\r", "").split("\n");
     for (const QString &line : std::as_const(lines)) {
@@ -345,6 +351,10 @@ ExportController::ExportResult ExportController::generateXrayConfig(const QStrin
     }
 
     result.nativeConfigString = amnezia::serialization::vless::Serialize(vlessServer, APPLICATION_NAME);
+    const QString qrCode = qrCodeUtils::generatePlainQrCodeImage(result.nativeConfigString.toUtf8());
+    if (!qrCode.isEmpty()) {
+        result.qrCodes << qrCode;
+    }
 
     return result;
 }
